@@ -32,9 +32,9 @@ WORKDIR $HOME
 # Python Dependencies for the md_workshop
 RUN mamba install -c conda-forge -y aiida-core
 RUN if [ "$TARGETPLATFORM" = "linux/amd64" ]; then \
-      conda install conda-forge/linux-64::gromacs=2024.5=nompi_h5f56185_100 -y; \
+      mamba install conda-forge/linux-64::gromacs=2024.5=nompi_h5f56185_100 -y; \
     elif [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
-      conda install conda-forge/linux-aarch64::gromacs=2024.5=nompi_h9afd374_100 -y; \
+      mamba install conda-forge/linux-aarch64::gromacs=2024.5=nompi_h9afd374_100 -y; \
     fi
 RUN pip3 install aiida-gromacs mdtraj vermouth
 
