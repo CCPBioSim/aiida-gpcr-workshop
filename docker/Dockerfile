@@ -5,13 +5,6 @@ FROM ghcr.io/ccpbiosim/jupyterhub-base:$BASE_IMAGE
 LABEL maintainer="James Gebbie-Rayet <james.gebbie@stfc.ac.uk>"
 ARG TARGETPLATFORM
 
-# Install curl and unzip
-RUN apt-get update --yes && \
-    apt-get install --yes --no-install-recommends \
-    curl \
-    unzip && \
-    apt-get clean && rm -rf /var/lib/apt/lists/* && \
-
 USER $NB_USER
 WORKDIR $HOME
 
