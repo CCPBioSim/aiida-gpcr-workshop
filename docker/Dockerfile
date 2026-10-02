@@ -11,7 +11,7 @@ WORKDIR $HOME
 # Python Dependencies for the md_workshop
 RUN conda install -y -c conda-forge -c ccpbiosim \
     conda-forge::aiida-core=2.9.2 \
-    ccpbiosim::aiida-gromacs=2.2.2 \
+    ccpbiosim::aiida-gromacs=2.3.1 \
     conda-forge::gromacs=2026.3=nompi_*
 RUN pip install --no-cache-dir \
     mdtraj==1.11.1.post2 \
