@@ -1,0 +1,5 @@
+name: aiida-gromacs - GPCR MD simulation tutorial
+category: advanced
+authors: ""
+shortdesc: An advanced demonstration showing advanced GPCR workflow with full data provenance collection.
+longdesc: ""
