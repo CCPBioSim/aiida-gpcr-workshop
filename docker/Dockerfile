@@ -14,7 +14,7 @@ RUN conda install -y -c conda-forge -c ccpbiosim \
     ccpbiosim::aiida-gromacs=2.3.1 \
     conda-forge::gromacs=2026.3=nompi_*
 RUN pip install --no-cache-dir \
-    mdtraj==1.11.1.post2 \
+    mdtraj==1.11.2 \
     vermouth==0.15.0
 
 RUN git clone https://github.com/PSDI-UK/aiida-gromacs.git && \
