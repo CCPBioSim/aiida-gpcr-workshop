@@ -17,7 +17,7 @@ RUN pip install --no-cache-dir \
     mdtraj==1.11.2 \
     vermouth==0.15.0
 
-RUN git clone https://github.com/PSDI-UK/aiida-gromacs.git && \
+RUN git clone https://github.com/CCPBioSim/aiida-gromacs.git && \
     mv aiida-gromacs/examples/PTH2R_coarse-grained_files . && \
     mv aiida-gromacs/notebooks/PTH2R_coarse-grained_tutorial.ipynb . && \
     rm -rf aiida-gromacs
